@@ -8,6 +8,10 @@ spring:
 
 management:  endpoints:    web:      exposure:        include: '*'
 
+ribbon:
+  ReadTimeout: 120000 # processing request time
+  ConnectTimeout: 30000 # connection request time
+
 eureka:
   instance:
     preferIpAddress: true
